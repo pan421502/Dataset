@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pagination App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="max-w-4xl mx-auto bg-white p-6 shadow rounded-lg">
+        <h1 class="text-2xl font-bold mb-4">Data List with Pagination</h1>
+        
+        <!-- Search Bar -->
+        <input type="text" id="search" placeholder="Search..." class="w-full p-2 mb-4 border border-gray-300 rounded">
+        
+        <!-- Table -->
+        <table class="w-full border-collapse border border-gray-300">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="border p-2">ID</th>
+                    <th class="border p-2">Title</th>
+                    <th class="border p-2">Description</th>
+                </tr>
+            </thead>
+            <tbody id="data-body"></tbody>
+        </table>
+        
+        <!-- Pagination Controls -->
+        <div class="flex justify-between items-center mt-4">
+            <button id="first" class="px-3 py-1 bg-blue-500 text-white rounded">First</button>
+            <button id="prev" class="px-3 py-1 bg-blue-500 text-white rounded">Previous</button>
+            <span id="page-info" class="text-gray-700"></span>
+            <button id="next" class="px-3 py-1 bg-blue-500 text-white rounded">Next</button>
+            <button id="last" class="px-3 py-1 bg-blue-500 text-white rounded">Last</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
